@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="../css/default.css" />
+  </head>
+  <body>
+    <!-- CART PAGE SECTION -->
+    <div id="navbar-placeholder"></div>
+    <!-- NAVBAR PLACEHOLDER (navbar.html) -->
+
+    <section id="cart">
+      <h2>Your Shopping Cart</h2>
+
+      <!-- FORM TO ENTER ZIP CODE -->
+      <form id="zip-form" onsubmit="return validateZipCode(event);">
+        <p>Enter Your Zip Code for Delivery:</p>
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" maxlength="5" required />
+        <button type="submit">Confirm Delivery</button>
+      </form>
+
+      <!-- TABLE TO DISPLAY PRODUCTS DELIVERY OPTIONS -->
+      <table class="product-delivery-table">
+        <thead>
+          <tr>
+            <th>Product Type</th>
+            <th>Delivery Locations</th>
+            <th>Available Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kefir</td>
+            <td>Nationwide</td>
+            <td>Apple, Strawberry, Pear</td>
+          </tr>
+          <tr>
+            <td>Kombucha</td>
+            <td>Nationwide</td>
+            <td>Orange Ginger, Strawberry Hibiscus</td>
+          </tr>
+          <tr>
+            <td>Keto Chocolate Bars</td>
+            <td>Statewide</td>
+            <td>Almonds, Hazelnuts, Forest Mix</td>
+          </tr>
+          <tr>
+            <td>Sourdough Sticks</td>
+            <td>Citywide (Greenwood, SC)</td>
+            <td>Olive Oil Garlic, Olive Oil</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </section>
+      </div>
+    </section>
+ 
+    <!-- FOOTER SECTION WITH TRUSTED SITE AND PAYMENT METHODS -->
+    <div class="payment-methods">
+      <img src="../images/PaymentMethods.png" alt="POS">
+      <img src="../images/TrustedSite.png" alt="TrustedSite">
+    </div>
+    
+    <!-- JS FILE TO LINK FUNCTIONALITY-->
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
